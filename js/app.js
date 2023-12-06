@@ -12,3 +12,21 @@ navbarToggleBtn.addEventListener("click", function () {
 });
 
 
+const whishlistBtn = document.querySelectorAll("[data-whishlist-btn]");
+
+for (let i = 0; i < whishlistBtn.length; i++) {
+	whishlistBtn[i].addEventListener("click", function () {
+		elemToggleFunc(this);
+
+	});
+	
+}
+
+
+
+
+
+
+
+
+
