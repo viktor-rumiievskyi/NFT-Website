@@ -1,4 +1,4 @@
-:root {
+ :root {
 	--jet: hsl(0, 0%, 20%);
 	--white: hsl(0, 0%, 100%);
 	--black: hsl(0, 0%, 0%);
@@ -15,9 +15,7 @@
 	--eerie-black-2: hsl(0, 0%, 7%);
 	--rich-black-fogra-39: hsl(0, 0%, 2%);
 
-	/**
-	
-	*/
+
 	--ff-roboto: "Roboto", sans-serif;
 
 	--fs-1: 32px;
@@ -112,7 +110,7 @@ button, a, input, [tabindex] {
 
 /* Reused style */
 .container {
-	padding: 0.12px;
+	padding: 0 12px;
 }
 
 .h1, .h2, .h3 {
@@ -436,3 +434,92 @@ header .container {
 	border-radius: 4px;
 }
 /* New product */
+
+/* About */
+.about {
+	padding: 60px 0;
+}
+
+.about-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.about-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 25px;
+	margin: 0 10px;
+} 
+
+.about-item {
+	background: var(--eerie-black-2);
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.about-card {
+	position: relative;
+	padding: 30px 10px 20px;
+	border: 1px solid var(--onyx-1);
+	border-radius: 4px;
+	text-align: center;
+}
+
+.about-card::before, .about-card::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	background: var(--sonic-silver);
+	border-radius: 10px;
+	transition: var(--transition);
+}
+
+.about-card::before {
+	width: 3px;
+	height: 100px;
+}
+
+.about-card::after {
+	width: 100px;
+	height: 3px;
+}
+
+.about-item:hover .about-card::before, .about-item:hover .about-card::after {
+	background: var(--golden-puppy);
+}
+
+.card-number {
+	position: absolute;
+	background: var(--eerie-black-1);
+	color: var(--onyx-2);
+	top: -15px;
+	left: -15px;
+	padding: 5px 15px;
+	font-size: 24px;
+	font-weight: var(--fw-700);
+	border-bottom-left-radius: 18px;
+	border: 14px solid var(--eerie-black-2);
+}
+
+.card-icon {
+	width: max-content;
+	margin-inline: auto;
+	margin-bottom: 30px;
+}
+
+.about-card-title {
+	margin-bottom: 20px;
+	transition: var(--transition);
+}
+
+.about-item:hover .about-card-title {
+	color: var(--golden-puppy);
+}
+
+.about-card-text {
+	font-size: var(--fs-7);
+	line-height: 1.5;
+}
+/* About */
