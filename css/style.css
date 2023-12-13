@@ -523,3 +523,10 @@ header .container {
 	line-height: 1.5;
 }
 /* About */
+
+/* Explore Product */
+.explore-product {
+	background: var(--eerie-black-2);
+	padding: 60px 0;
+}
+/* Explore Product */
