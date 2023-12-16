@@ -530,3 +530,122 @@ header .container {
 	padding: 60px 0;
 }
 /* Explore Product */
+
+/* Top seller */
+.top-seller {
+	padding: 60px 0;
+}
+
+.top-seller-title {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 40px;
+	gap: 5px;
+}
+
+.top-seller-title span {
+	color: var(--golden-puppy);
+}
+
+.top-seller-title i {
+	margin-left: 10px;
+}
+
+.top-seller-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 25px;
+}
+
+.top-seller-item {
+	background: var(--eerie-black-2);
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.top-seller-card {
+	position: relative;
+	padding: 13px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	border: 1px solid var(--onyx-2);
+	border-radius: 4px;
+}
+
+.top-seller-card::before, .top-seller-card::after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	right: -1px;
+	background: var(--sonic-silver);
+	transition: var(--transition);
+}
+
+.top-seller-card::before {
+	width: 2px;
+	height: 37px;
+}
+
+.top-seller-card::after {
+	width: 37px;
+	height: 2px;
+}
+
+.top-seller-card:hover::before, .top-seller-card:hover::after {
+	background: var(--golden-puppy);
+}
+
+.top-seller .card-number-top {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--eerie-black-1);
+  font-size: var(--fs-10);
+  font-weight: var(--fw-700);
+  color: var(--onyx-2);
+  padding: 5px 10px;
+  border-top-right-radius: 10px;
+  border: 7px solid var(--eerie-black-2);
+}
+
+.card-avatar {
+	position: relative;
+	background: var(--black);
+	border-radius: 50%;
+}
+
+.avatar-badge {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+	background: var(--golden-puppy);
+	border-radius: 50%;
+	height: 14px;
+	width: 14px;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar-badge i {
+	--i-stroke-width: 70px;
+}
+
+.card-title {
+	color: var(--quick-silver);
+	transition: var(--transition);
+}
+
+.top-seller-card:hover .card-title {
+	color: var(--golden-puppy);
+}
+
+.card-content data {
+	color: var(--quick-silver);
+	font-size: var(--fs-10);
+}
+/* Top seller */
