@@ -787,3 +787,34 @@ header .container {
 	color: var(--golden-puppy);
 }
 /* Footer */
+
+/* Scrool up */
+.scrool-up {
+	background: var(--eerie-black-1);
+	color: var(--golden-puppy);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	display: grid;
+	place-items: center;
+	font-size: 24px;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.scrool-up.active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
+.scrool-up:hover {
+	--eerie-black-1: hsl(0, 0%, 20%);
+}
+/* Scrool up */

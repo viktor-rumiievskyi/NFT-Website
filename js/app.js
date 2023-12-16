@@ -22,6 +22,16 @@ for (let i = 0; i < whishlistBtn.length; i++) {
 	
 }
 
+const upBtn = document.querySelector("[data-up]");
+
+window.addEventListener("scroll", function () {
+	if (this.window.scrollY >= 800 ) {
+		upBtn.classList.add("active")
+	} else {
+		upBtn.classList.remove("active");
+	}
+});
+
 
 
 
